@@ -12,6 +12,7 @@ const schema = z.object({
     APP_ENV: z.enum(['development', 'production', 'staging']).default('development'),
     APP_KEY: z.string().base64().min(16).max(128),
     APP_ORIGINS: z.string().default('http://localhost:3000,http://127.0.1:3000'),
+    DATABASE_URL: z.string().url().default('file:./dev.db'),
 });
 
 export default {

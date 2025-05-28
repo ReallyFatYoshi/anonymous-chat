@@ -1,7 +1,7 @@
 {
   "scripts": {
     "db:generate": "prisma db:generate",
-    "preinstall": "[ -f .env ] || cp .example.env .env",
+    "preinstall": "node -e \"require('fs').existsSync('.env') || require('fs').copyFileSync('.example.env', '.env')\"",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
