@@ -7,6 +7,7 @@
       "outputs": ["dist/**"]
     },
     "lint": {},
+    "db:generate": {},
     "test": {
       "cache": false,
       "persistent": true
