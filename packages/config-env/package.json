@@ -1,0 +1,14 @@
+{
+  "name": "@manonymous-chat/config-env",
+  "version": "1.0.0",
+  "description": "Shared environment variable loader and validator for Manonymous Chat monorepo",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "zod": "^3.22.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
